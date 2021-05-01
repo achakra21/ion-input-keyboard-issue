@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ion-virtual-scroll</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-virtual-scroll [items]="items" approxItemHeight="320px">
+    <ion-card *virtualItem="let item; let itemBounds = bounds; let i = index">
+     
+    <ion-card-header>
+      <ion-label>Item Number Filed::{{ i }}</ion-label>
+    </ion-card-header>
+    <ion-card-content> <ion-input type="number" placeholder="Enter a number{{item}}"></ion-input></ion-card-content>
+    </ion-card>
+  </ion-virtual-scroll>
+
+ 
+</ion-content>

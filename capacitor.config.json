@@ -1,0 +1,13 @@
+{
+  "appId": "com.abhijit.keyboard",
+  "appName": "input-keyboard-covering",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
